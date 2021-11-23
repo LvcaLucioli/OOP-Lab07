@@ -22,7 +22,7 @@ public final class TestSportByStaticInnerClass {
     public static void main(final String... args) {
         final SportSocialNetworkUserImpl<User> dcassani = new SportSocialNetworkUserImpl<>("Davide", "Cassani", "dcassani", 53);
         final SportSocialNetworkUserImpl<User> becclestone = new SportSocialNetworkUserImpl<>("Bernie", "Ecclestone", "becclestone", 83);
-        final SportSocialNetworkUserImpl<User> falonso = new SportSocialNetworkUserImpl<>("Fernando", "Alonso", "falonso", 34);;
+        final SportSocialNetworkUserImpl<User> falonso = new SportSocialNetworkUserImpl<>("Fernando", "Alonso", "falonso", 34);
         
         falonso.addSport(SportSocialNetworkUserImpl.F1);
         falonso.addSport(SportSocialNetworkUserImpl.BIKE);

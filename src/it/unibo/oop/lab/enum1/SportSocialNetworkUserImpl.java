@@ -60,7 +60,7 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      */
     public SportSocialNetworkUserImpl(final String name, final String surname, final String user, final int userAge) {
         super(name, surname, user, userAge);
-        followedSports = new HashSet<>();
+        this.followedSports = new HashSet<>();
     }
 
     /*
@@ -77,7 +77,7 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      *            a sport followed/done by the user
      */
     public void addSport(final Sport sport) {
-    	followedSports.add(sport);
+    	this.followedSports.add(sport);
     }
 
     /**
@@ -89,6 +89,6 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      * @return true if the user likes sport s
      */
     public boolean hasSport(final Sport s) {
-        return followedSports.contains(s);
+        return this.followedSports.contains(s);
     }
 }

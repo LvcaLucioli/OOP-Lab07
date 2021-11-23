@@ -16,7 +16,7 @@ public class OneListAcceptable<T> implements Acceptable<T> {
 		return new Acceptor<T>() {
 			private Iterator<T> iterator = acceptableList.iterator();
 			@Override
-			public void accept(T newElement) throws ElementNotAcceptedException {
+			public void accept(T newElement) throws ElementNotAcceptedException, EndNotAcceptedException {
 				if(!(iterator.hasNext())) {
 					throw new EndNotAcceptedException();
 				}

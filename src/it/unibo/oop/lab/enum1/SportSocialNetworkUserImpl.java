@@ -28,7 +28,7 @@ import it.unibo.oop.lab.socialnetwork.User;
  */
 public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUserImpl<U> {
 
-	private final Set<Sport> followedSports = new HashSet<>();
+	private final Set<Sport> followedSports;
 
     /**
      * Builds a new {@link SportSocialNetworkUserImpl}.
@@ -60,6 +60,7 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      */
     public SportSocialNetworkUserImpl(final String name, final String surname, final String user, final int userAge) {
         super(name, surname, user, userAge);
+        followedSports = new HashSet<>();
     }
 
     /*

@@ -17,7 +17,12 @@ public class OneListAcceptable<T> implements Acceptable<T> {
 			private Iterator<T> iterator = acceptableList.iterator();
 			@Override
 			public void accept(T newElement) throws ElementNotAcceptedException {
-				// TODO Auto-generated method stub
+				if(!(iterator.hasNext())) {
+					throw new EndNotAcceptedException();
+				}
+				if(!(newElement.equals(iterator.next()))){
+					throw new ElementNotAcceptedException(newElement);
+				}
 				
 			}
 

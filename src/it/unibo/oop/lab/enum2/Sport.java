@@ -17,27 +17,8 @@ package it.unibo.oop.lab.enum2;
  */
 public enum Sport {
 
-    /*
-     * TODO
-     * 
-     * Declare the following sports:
-     * 
-     * - basket
-     * 
-     * - volley
-     * 
-     * - tennis
-     * 
-     * - bike
-     * 
-     * - F1
-     * 
-     * - motogp
-     * 
-     * - soccer
-     * 
-     */
-
+	BASKET, VOLLEY, TENNIS, BIKE, F1, MOTOGP, SOCCER;
+	
     /*
      * TODO
      * 
@@ -45,7 +26,9 @@ public enum Sport {
      * 
      * Declare required fields
      */
-
+	private Place place;
+	private int noTeamMembers;
+	private String actualName;
     /*
      * TODO
      * 
@@ -55,6 +38,12 @@ public enum Sport {
      * 
      * - Sport(final Place place, final int noTeamMembers, final String actualName)
      */
+	
+	private Sport(final Place place, final int noTeamMembers, final String actualName) {
+		this.place = place;
+		this.noTeamMembers = noTeamMembers;
+		this.actualName = actualName;
+	}
 
     /*
      * TODO
@@ -81,4 +70,5 @@ public enum Sport {
      * 
      * Returns the string representation of a sport
      */
+	
 }

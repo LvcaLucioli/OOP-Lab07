@@ -4,7 +4,6 @@
 package it.unibo.oop.lab.nesting1;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 import it.unibo.oop.lab.socialnetwork.SocialNetworkUserImpl;

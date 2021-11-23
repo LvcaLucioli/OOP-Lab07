@@ -125,24 +125,13 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
         return this.sports.contains(s);
     }
 
-    /*
-     * TODO
-     * 
-     * Complete the definition of this static inner class defining a Sport along
-     * with its bare name.
-     */
     public static final class Sport {
     	private String name;
     	
     	public Sport(final String name) {
     		this.name = name;
     	}
-        /*
-         * TODO
-         * 
-         * Redefine equals so that two sports are equal only if they feature the
-         * very same name. Remember that you must also redefine hashCode()!
-         */
+    	
         @Override
         public boolean equals(final Object o) {
         	if(o == null) {
